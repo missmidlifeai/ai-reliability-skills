@@ -17,6 +17,7 @@ These were developed over months of daily use with a personal AI assistant and h
 9. **build-discipline** — One-sentence intent before building, research before novel setups, a mid-task checkpoint, and built ≠ done.
 10. **discussion-vs-decision** — Keep exploration labeled exploration. Never execute on a brainstorm.
 11. **memory-budget** — Zero-sum long-term memory, quote-backed candidate learnings, backtest before adopting rules.
+12. **memory-probe** — Read-test long-term memory: committed questions, distractors, conflict-updates, honest scoring. A 10/10 on an easy probe is a baseline, not a victory.
 
 ## Using these
 
