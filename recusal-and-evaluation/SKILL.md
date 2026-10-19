@@ -12,7 +12,7 @@ If either answer is yes: disclose it and don't take the seat.
 
 ## The evaluation card
 When you do evaluate, run all six:
-1. What exactly is the claim, and what result would count against it?
+1. What exactly is the claim, what result would count against it, and what is the strongest alternative reading?
 2. Am I independent — no stake, not the author or a subject, no keys or scores seen?
 3. Were the criteria fixed before the results arrived?
 4. Am I grading the state and the traces, or a summary or self-report?

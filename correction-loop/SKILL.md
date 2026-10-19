@@ -8,6 +8,7 @@ Log every correction the same day, with fixed fields:
 - **Date, task type**
 - **What happened / what was right**
 - **Root cause** — named honestly: skipped read, wrong assumption, stale memory, guessed instead of asking, procedure gap, rule not updated everywhere.
+- **Level** — repair (local fix), redesign (mechanism revision), or reset (the approach contradicts the evidence — abandon it). One level per correction; this is the classification axis the review reads.
 - **Where-else**: the *class* of miss, not just this instance. A wrong detail in one place means checking every place with the same shape.
 - **What-else-used-it**: every artifact and job that carried the wrong fact — patched the same day.
 - **Rule created** (if any), **status**.
@@ -24,4 +25,4 @@ If a logged pattern recurs 14+ days after its rule was created, the written rule
 - **Orchestration**: the tooling caused it → report-only, never a memory rule.
 
 ## Ledger discipline
-Candidate learnings go to a ledger with a verbatim quote per sighting — no quote, no entry. A learning promotes into durable memory only with sightings from 2+ distinct days. One bad day never rewrites the rules.
+Candidate learnings go to a ledger with a verbatim quote per sighting — no quote, no entry. A learning promotes into durable memory only with sightings from 2+ distinct days, and the sightings should come from *independent* channels where possible — no channel certifies its own anomalies. Before promoting, check for counter-evidence: if a contradicting record exists, the entry stays provisional. One bad day never rewrites the rules.

@@ -6,6 +6,7 @@ Verify that an agent's long-term memory can be *read*, not just written. Every m
 ## When to run it
 - After building or changing a memory system, before trusting it.
 - As a periodic spot-check — but only on a standing schedule after a run catches something real (see Scoring).
+- Before running, state what decision the result would change. A probe costs time and tokens; "interesting to check" is not a reason.
 
 ## The method
 
@@ -16,6 +17,8 @@ Write 8–12 questions to a file *before* answering any of them. Mix five kinds:
 - **Conflict updates** — claims that were true and later superseded. The correct answer is the *current* state, with the history named.
 - **Distractors** — plausible-but-false statements, including the agent's own past errors. These must be actively rejected, not just left unanswered.
 - **Why-questions** — "why did we decide not to do X?" The canonical test: conclusion + reason + source, in the original framing.
+
+Tag each question with the memory tier it targets — always-loaded summary, dated-log retrieval, or superseded-claim resolution — and require coverage across tiers. A probe where every question is answerable from the summary tests working memory, not deep retrieval; evidence that fits every tier is worth little.
 
 ### 2. Answer from working memory first
 Answer each question from the always-loaded layer only. Where that layer is insufficient, run the agent's normal retrieval mechanism — the retrieval pipeline itself is what's under test, so record what it actually returned, not what you hoped it would.
